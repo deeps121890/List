@@ -19,3 +19,31 @@ Sample Output:
 The even list [2, 6]
 The odd list [1, 3, 5]
 '''
+# Function to separate even and odd numbers into two lists
+def separate_even_odd():
+    # Input the size of the list
+    size = int(input())  # First input corresponds to the size of the list
+    elements = []  # Initialize an empty list to hold the elements
+
+    # Input the list elements
+    for _ in range(size):
+        element = int(input())  # Read each element
+        elements.append(element)  # Add the element to the list
+
+    # Initialize lists for even and odd numbers
+    even_list = []
+    odd_list = []
+
+    # Separate the elements into even and odd lists
+    for num in elements:
+        if num % 2 == 0:
+            even_list.append(num)  # Add to even list
+        else:
+            odd_list.append(num)    # Add to odd list
+
+    # Output the results
+    print(f"The even list {even_list}")
+    print(f"The odd list {odd_list}")
+
+# Call the function
+separate_even_odd()
