@@ -17,3 +17,22 @@ Sample Input:
 Sample Output:
 11
 '''
+# Function to calculate the sum of elements in the array
+def sum_of_array_elements():
+    # Input the number of elements in the array
+    n = int(input())  # First integer corresponds to n
+    elements = []  # Initialize an empty list to hold the elements
+
+    # Input the array elements
+    for _ in range(n):
+        element = int(input())  # Read each element
+        elements.append(element)  # Add the element to the list
+
+    # Calculate the sum of the elements
+    total_sum = sum(elements)  # Use the built-in sum function
+
+    # Output the sum
+    print(total_sum)
+
+# Call the function
+sum_of_array_elements()
