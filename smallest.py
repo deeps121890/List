@@ -15,3 +15,22 @@ Sample Input:
 Sample Output:
 1
 '''
+# Function to find the smallest number in a list
+def find_smallest_number():
+    # Input the size of the list
+    size = int(input())  # First input corresponds to the size of the list
+    elements = []  # Initialize an empty list to hold the elements
+
+    # Input the list elements
+    for _ in range(size):
+        element = int(input())  # Read each element
+        elements.append(element)  # Add the element to the list
+
+    # Find the smallest element in the list
+    smallest_number = min(elements)  # Use the built-in min function
+
+    # Output the smallest number
+    print(smallest_number)
+
+# Call the function
+find_smallest_number()
